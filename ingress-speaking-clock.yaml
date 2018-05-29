@@ -9,11 +9,10 @@ spec:
     serviceName: default-http-backend
     servicePort: 80
   rules:
-  - host: speaking.clock
+  - host: auth.speaking.clock
     http:
       paths:
       - path: /
         backend:
-          serviceName: speaking-clock
+          serviceName: speaking-clock-basic-auth
           servicePort: 5000
-
